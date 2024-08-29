@@ -7,7 +7,7 @@
   </head>
   <body style="text-align: center; padding: 0; border: 0; margin: 0;">
     <canvas id="unity-canvas" width=350 height=600 style="width: 350px; height: 600px; background: #231F20"></canvas>
-    <script src="Build/astrodrr.loader.js"></script>
+    <script src="Build/AstroWebgl.loader.js"></script>
     <script>
       if (/iPhone|iPad|iPod|Android/i.test(navigator.userAgent)) {
         // Mobile device style: fill the whole browser client area with the game canvas:
@@ -25,9 +25,9 @@
       }
 
       createUnityInstance(document.querySelector("#unity-canvas"), {
-        dataUrl: "Build/astrodrr.data",
-        frameworkUrl: "Build/astrodrr.framework.js",
-        codeUrl: "Build/astrodrr.wasm",
+        dataUrl: "Build/AstroWebgl.data",
+        frameworkUrl: "Build/AstroWebgl.framework.js",
+        codeUrl: "Build/AstroWebgl.wasm",
         streamingAssetsUrl: "StreamingAssets",
         companyName: "Amira",
         productName: "quickball",
